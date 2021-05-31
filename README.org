@@ -1,0 +1,23 @@
+#+TITLE: EchoBERT
+#+Author: Håkon Måløy
+
+* Overview:
+This is the code corresponding to the paper introducing EchoBERT a transformer-based model for interpreting echogram dynamics in farmed atlantic salmon.
+
+The code provides two approaches for training networks using the Pytorch Lightning library, each in a separate main training code file:
+1. Train and test a single network (train_model_lightning.py)
+2. Train several networks at once using SLURM (distributed_job_manager.py)
+
+It is possible to train both Transformer and LSTM networks by setting the 'model_type' argument in EchoBERT_Lightning.py. Similarly there are several other arguments that can be set in the two main training code files to load pretrained models or to decide whether to do pretraining or fine-tuning by setting the 'disease_model' argument to 0 or 1 respectively.
+
+* Dataset availability
+The dataset is available for download at: http://dx.doi.org/10.21227/76ma-tw16
+
+* Dataset notebooks
+The repo contains two .ipynb notebooks for creating the dataset from .csv files. First run Convert_to_.hdf5.ipynb to convert the .csv files to .hdf5 dataset and target files. Then run Make_x-fold.ipynb to create the different x-val folds from the dataset files.
+
+The Convert_to_.hdf5.ipynb notebook must be run once per cage to convert the files, resulting in 6 runs per notebook (It's not optimal I know). To create the six folds, each fold must be created manually by selecting which cage to exclude from the fold. This again results in a further six runs of the Make_x-fold.ipynb notebook. You should now be left with x-folds data and target files ready to be used for training.
+
+* Anaconda environment
+
+The repo contains an anaconda environment.yml file which can be used to recreate the anaconda environment last used with this code.
