@@ -2,7 +2,7 @@
 #+Author: Håkon Måløy
 
 * Overview:
-This is the code corresponding to the paper EchoBERT: A Transformer-Based Approach for Behavior Detection in Echograms," in IEEE Access, vol. 8, pp. 218372-218385, 2020, doi: 10.1109/ACCESS.2020.3042337. A transformer architecture for interpreting echogram dynamics in farmed atlantic salmon.
+This is the code corresponding to the paper EchoBERT: A Transformer-Based Approach for Behavior Detection in Echograms," https://dx.doi.org/10.1109/ACCESS.2020.3042337. A transformer architecture for interpreting echogram dynamics in farmed atlantic salmon.
 
 The code provides two approaches for training networks using the Pytorch Lightning library, each in a separate main training code file:
 1. Train and test a single network (train_model_lightning.py)
@@ -25,7 +25,7 @@ The repo contains an anaconda environment.yml file which can be used to recreate
 * Citation
 If you use any of this work, please cite it using the following bibtex:
 
-@ARTICLE{9281296,//
+@ARTICLE{9281296,
   author={Måløy, Håkon},
   journal={IEEE Access},
   title={EchoBERT: A Transformer-Based Approach for Behavior Detection in Echograms},
