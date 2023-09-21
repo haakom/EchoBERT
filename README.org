@@ -25,14 +25,14 @@ The repo contains an anaconda environment.yml file which can be used to recreate
 * Citation
 If you use any of this work, please cite it using the following bibtex:
 
-@ARTICLE{9281296,
-  author={Måløy, Håkon},
-  journal={IEEE Access}, 
-  title={EchoBERT: A Transformer-Based Approach for Behavior Detection in Echograms}, 
-  year={2020},
-  volume={8},
-  number={},
-  pages={218372-218385},
+@ARTICLE{9281296,\\
+  author={Måløy, Håkon},\\
+  journal={IEEE Access},\\ 
+  title={EchoBERT: A Transformer-Based Approach for Behavior Detection in Echograms},\\
+  year={2020},\\
+  volume={8},\\
+  number={},\\
+  pages={218372-218385},\\
   doi={10.1109/ACCESS.2020.3042337}}
 
 * Licence
